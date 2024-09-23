@@ -41,22 +41,3 @@ export const Default: Story = {
     </Accordion>
   ),
 };
-
-export const Multiple: Story = {
-  render: () => (
-    <Accordion type="multiple">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>Can I open multiple items?</AccordionTrigger>
-        <AccordionContent>
-          Yes! This accordion allows multiple items to be open simultaneously.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>How does it work?</AccordionTrigger>
-        <AccordionContent>
-          Set the 'type' prop to "multiple" on the Accordion component.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  ),
-};
