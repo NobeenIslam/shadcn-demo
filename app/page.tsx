@@ -16,6 +16,8 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 
 import { Button } from "@/components/ui/Button/Button";
+import { Badge } from "@/components/ui/Badge";
+import PropertyListing from "@/components/ui/PopertyListing";
 
 export default function Home() {
   return (
@@ -67,6 +69,12 @@ export default function Home() {
           </TabsContent>
           <TabsContent value="password">Change your password here.</TabsContent>
         </Tabs>
+      </div>
+      <div className="m-auto">
+        <Badge variant="secondary">Badge</Badge>
+      </div>
+      <div className="m-auto">
+        <PropertyListing></PropertyListing>
       </div>
     </div>
   );
