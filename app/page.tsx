@@ -5,6 +5,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/Accordion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/Alert";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/Card";
 
 import { Button } from "@/components/ui/Button/Button";
 
@@ -32,6 +40,20 @@ export default function Home() {
             You can add components and dependencies to your app using the cli.
           </AlertDescription>
         </Alert>
+      </div>
+      <div className="m-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Card Content</p>
+          </CardContent>
+          <CardFooter>
+            <p>Card Footer</p>
+          </CardFooter>
+        </Card>
       </div>
     </div>
   );
